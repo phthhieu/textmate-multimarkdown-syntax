@@ -1,0 +1,110 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.meta.header.multimarkdown {
+  color: #979797;
+  background-color: #FFFFFF;
+}
+
+.meta.header.key.multimarkdown {
+  text-decoration: underline;
+}
+
+.meta.header.value.multimarkdown {
+}
+
+.markup.heading.markdown {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.markup.table.multimarkdown {
+  color: #FF0000;
+}
+
+.meta.link.reference.def.markdown {
+  color: #21FF0A;
+}
+
+.meta.footnote.reference.def.multimarkdown {
+  color: #FF8D04;
+}
+
+.meta.citation.reference.def.multimarkdown {
+  color: #0ABFFF;
+}
+
+.markup.raw.block.markdown {
+  background-color: #E5E5E5;
+}
+
+.markup.math.multimarkdown {
+  background-color: #E5E5E5;
+}
+
+.markup.raw.inline.markdown {
+  font-weight: bold;
+}
+
+.markup.quote.markdown {
+  background-color: #E5E5E5;
+}
+
+.citation.possible {
+  color: #FF0093;
+}
+
+.meta.link {
+  color: #0205F0;
+}
